@@ -431,15 +431,23 @@ type="text"
 id="nama"
 placeholder="Nama">
 
+<select id="kehadiran">
+
+<option value="Hadir">✅ Hadir</option>
+
+<option value="Tidak Hadir">❌ Tidak Hadir</option>
+
+<option value="Masih Ragu">❓ Masih Ragu</option>
+
+</select>
+
 <textarea
 id="pesan"
 placeholder="Tulis ucapan..."
 rows="5"></textarea>
 
 <button onclick="kirimUcapan()">
-
 Kirim
-
 </button>
 
 <div id="listUcapan"></div>
@@ -517,6 +525,7 @@ Salin Rekening
 </div>
 
 <script src="script.js"></script>
+<script src="js/guestbook.js"></script>
 <script src="js/gallery.js"></script>
 <script src="js/rsvp.js"></script>
 

@@ -7,13 +7,13 @@ const bottomNav = document.getElementById("bottomNav");
 
 let playing = false;
 
-const target = new Date("December 20, 2026 09:00:00").getTime();
+const target = new Date("August 22, 2026 23:59:00").getTime();
 
 setInterval(function(){
 
     const sekarang = new Date().getTime();
 
-    const selisih = target - sekarang;
+    const selisih = Math.max(0, target - sekarang);
 
     const hari = Math.floor(selisih/(1000*60*60*24));
     const jam = Math.floor((selisih%(1000*60*60*24))/(1000*60*60));
